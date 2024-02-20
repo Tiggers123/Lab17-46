@@ -20,7 +20,6 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
                 .withSockJS();
     }
 
-
     /**
      * defined message passing endpoint
      * @param registry

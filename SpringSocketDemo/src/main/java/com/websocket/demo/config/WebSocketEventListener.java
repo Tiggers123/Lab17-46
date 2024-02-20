@@ -22,6 +22,7 @@ public class WebSocketEventListener {
             var chatMessage = ChatMessage.builder()
                     .type(MessageType.LEAVE)
                     .sender(username)
+                    .onlineUsersCount(ChatMessage.deleteUser())
                     .build();
 
             messageSendingOperations.convertAndSend("/topic/public", chatMessage);
